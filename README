@@ -1,0 +1,15 @@
+Pure Python
+-----------
+
+$ python run.py
+
+This loads the fact.py, which is in pure Python.
+
+Cython in pure Python mode
+--------------------------
+
+$ cython fact.py
+
+See the generated fact.c, which contains a pure C for loop (e.g. it's very
+fast). Cython just uses a Python code and fact.pxd which contains additional
+information to help Cython produce a very fast C code.
